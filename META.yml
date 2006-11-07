@@ -1,22 +1,12 @@
---- #YAML:1.0
-name: File-Mork
-version: 0.2
-author:
-  - Module-ised by Simon Wistow <simon@thegestalt.org>
-  - based on
-  - |-
-    Created:  3-Mar-2004 by Jamie Zawinski, Anonymous, and Jacob Post.
-abstract: an single entry in a mork DB
-license: gpl
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         File-Mork
+version:      0.3
+version_from: lib/File/Mork.pm
+installdirs:  site
 requires:
-  HTML::Entities: 0
-  Test::More: 0
-dynamic_config: 1
-provides:
-  File::Mork:
-    file: lib/File/Mork.pm
-    version: 0.2
-  File::Mork::Entry:
-    file: lib/File/Mork.pm
-    version: 0.2
-generated_by: Module::Build version 0.25
+    HTML::Entities:                0
+    Test::More:                    0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.30
